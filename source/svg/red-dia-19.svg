@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+<style type="text/css">
+	.st0{display:none;}
+	.st1{display:inline;}
+	.st2{fill:#D8D8D8;}
+	.st3{stroke:#FF0000;stroke-width:2.0126;stroke-linejoin:round;stroke-miterlimit:10;}
+</style>
+<g id="Camada_1" class="st0">
+	<g class="st1">
+		<rect x="-21.5" y="-498.5" class="st2" width="124" height="862"/>
+		<path d="M102-498v861H-21v-861H102 M103-499H-22v863h125V-499L103-499z"/>
+	</g>
+</g>
+<g id="Camada_2">
+	<g>
+		<line class="st3" x1="12.3" y1="10.9" x2="7.7" y2="10.9"/>
+		<line class="st3" x1="12.6" y1="10.7" x2="12.6" y2="22.8"/>
+		<line class="st3" x1="23.3" y1="22.3" x2="18.5" y2="22.3"/>
+		<line class="st3" x1="23.4" y1="16.5" x2="18.6" y2="16.5"/>
+		<line class="st3" x1="23.5" y1="10.7" x2="18.7" y2="10.7"/>
+		<line class="st3" x1="23.7" y1="16.5" x2="23.5" y2="22.5"/>
+		<line class="st3" x1="18.6" y1="10.8" x2="18.6" y2="16.5"/>
+		<line class="st3" x1="23.7" y1="10.9" x2="23.7" y2="16.7"/>
+	</g>
+</g>
+</svg>

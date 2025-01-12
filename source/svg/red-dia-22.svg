@@ -10,18 +10,20 @@
 </style>
 <g id="Camada_1" class="st0">
 	<g class="st1">
-		<rect x="-73.5" y="-290.5" class="st2" width="124" height="862"/>
-		<path d="M50-290v861H-73v-861H50 M51-291H-74v863H51V-291L51-291z"/>
+		<rect x="-73.5" y="-550.5" class="st2" width="124" height="862"/>
+		<path d="M50-550v861H-73v-861H50 M51-551H-74v863H51V-551L51-551z"/>
 	</g>
 </g>
 <g id="Camada_2">
 	<g>
-		<line class="st3" x1="11.3" y1="10.7" x2="7.3" y2="10.7"/>
-		<line class="st3" x1="11.6" y1="10.5" x2="11.6" y2="22.5"/>
-		<line class="st3" x1="18.7" y1="10.6" x2="14.4" y2="10.6"/>
-		<line class="st3" x1="18.9" y1="10.4" x2="18.9" y2="22.5"/>
-		<line class="st3" x1="22.9" y1="10.6" x2="18.7" y2="10.6"/>
-		<line class="st3" x1="23.2" y1="10.4" x2="23.2" y2="22.5"/>
+		<line class="st3" x1="9.9" y1="10.3" x2="6" y2="10.3"/>
+		<line class="st3" x1="10.2" y1="10" x2="10.2" y2="22.3"/>
+		<line class="st3" x1="13.7" y1="10.3" x2="9.9" y2="10.3"/>
+		<line class="st3" x1="14" y1="10" x2="14" y2="22.3"/>
+		<line class="st3" x1="20.3" y1="10.3" x2="16.4" y2="10.3"/>
+		<line class="st3" x1="20.6" y1="10" x2="20.6" y2="22.3"/>
+		<line class="st3" x1="24.1" y1="10.3" x2="20.3" y2="10.3"/>
+		<line class="st3" x1="24.4" y1="10" x2="24.4" y2="22.3"/>
 	</g>
 </g>
 </svg>
