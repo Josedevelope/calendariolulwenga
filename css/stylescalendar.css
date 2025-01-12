@@ -1,13 +1,4 @@
 
-@media all {
-    body {
-        font-family: Arial, sans-serif;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 0;
-        padding: 0;
-    }
     
     .container-lulwenga {
         text-align: center;
@@ -94,36 +85,6 @@
     }
     
         
-      }
-    
-    
-      @media print {
-        /* esconder tudo */
-        body * {
-             display: hidden;
-          }
-          /* exibir somente o que tem na div para imprimir */
-          #calendar, #calendar * {
-            visibility: visible;
-          }
-         
-          #calendar {
-            display: flex;               /* Usar o Flexbox para alinhar as divs lado a lado */
-            gap: 10px;                   /* Adiciona uma margem de 10px entre as divs */
-            flex-wrap: wrap;              /* Permite que as divs quebrem para a linha seguinte caso necessário */
-          }
-    
-    
-          .month:nth-child(-n+6) {
-            display: block!important;
-            width: 250px;
-          }
-        
-      }
-    
-    
-    
-    
       /* LUKONGULO*/
     
       table {
