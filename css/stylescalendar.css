@@ -1,0 +1,179 @@
+
+@media all {
+    body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .container-lulwenga {
+        text-align: center;
+        margin-top: 20px;
+        height: 30%;
+    }
+    
+    .container-lulwenga input {
+        margin: 5px;
+        padding: 10px;
+        width: 200px;
+    }
+    
+    .container-lulwenga button {
+        padding: 10px 20px;
+        margin: 10px;
+    }
+    
+    .container-lulwenga #calendar-controls {
+        display: flex;
+        justify-content: center;
+        margin: 20px 0;
+    }
+    
+    .container-lulwenga #calendar-controls button {
+        margin: 0 10px;
+    }
+    
+    .container-lulwenga #calendar {
+        margin-top: 20px;
+        width: 100%;
+    }
+    
+    .container-lulwenga .month {
+        display: none;
+    }
+    
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+    }
+    
+    .luluwenga-table th, .luluwenga-table td {
+        padding: 5px;
+        text-align: center;
+    }
+    
+    .luluwenga-table td
+    {
+        border: 1px solid #ccc;   
+    }
+    .luluwenga-table th {
+        border: none;
+    }
+    
+    .luluwenga-table th {
+        border-left: 1px solid #ccc;
+    }
+    
+    .luluwenga-table td {
+        font-weight: bold;
+        font-size: 26px;
+    }
+    
+    .container-lulwenga .tdG {
+        font-weight: normal;
+        font-size: 14px;
+    }
+    
+    .luluwenga-table th {
+        background-color: #004d00;
+        color: white;
+    }
+    
+    .luluwenga-table .weekend {
+        background-color: #ffffff;
+        color: #f60f07;
+    }
+    
+    .container-lulwenga .current-month {
+        border: 2px solid #004d00;
+        padding: 5px;
+    }
+    
+        
+      }
+    
+    
+      @media print {
+        /* esconder tudo */
+        body * {
+             display: hidden;
+          }
+          /* exibir somente o que tem na div para imprimir */
+          #calendar, #calendar * {
+            visibility: visible;
+          }
+         
+          #calendar {
+            display: flex;               /* Usar o Flexbox para alinhar as divs lado a lado */
+            gap: 10px;                   /* Adiciona uma margem de 10px entre as divs */
+            flex-wrap: wrap;              /* Permite que as divs quebrem para a linha seguinte caso necessário */
+          }
+    
+    
+          .month:nth-child(-n+6) {
+            display: block!important;
+            width: 250px;
+          }
+        
+      }
+    
+    
+    
+    
+      /* LUKONGULO*/
+    
+      table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    
+    .lukongulo {
+        width: 60%;
+        margin: 0 auto;
+    }
+    
+    .lukongulo th,
+    td {
+        border: 1px solid #000;
+        padding: 8px;
+        text-align: center;
+    }
+    
+    .lukongulo th {
+        background-color: #f2f2f2;
+    }
+    
+    .luluenga {
+        background-color: #e6ffe6;
+    }
+    
+    .gregoriano {
+        background-color: #ffffe6;
+    }
+    
+    .vertical-text {
+        writing-mode: vertical-rl;
+        transform: rotate(180deg);
+    }
+    
+    .lukongulo .header {
+        background-color: #ffff99;
+    }
+    
+    .lukongulo tbody tr:nth-child(4n) td {
+        border-bottom: 3px solid rgb(0, 0, 0);
+    }
+    
+    .lukongulo tbody tr:nth-child(n+9):nth-child(-n+16) {
+        background-color: rgba(11, 143, 46, 0.839);
+        color: white;
+    }
+    
+    .lukongulo tbody tr:nth-child(n+17):nth-child(-n+24) {
+        background-color: yellow;
+        color: rgb(0, 0, 0);
+    }
