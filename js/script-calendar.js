@@ -189,11 +189,11 @@ function printCalendar(year) {
             } else {
                 //td.textContent = day;
                 const imgElement = document.createElement('img');
+                imgElement.classeName = 'numberMandombe';
                 imgElement.src = 'source/svg/' + `${dayMandombe[day-1]}`;
                 if (dow == 6)
                     imgElement.src = 'source/svg/red-' + `${dayMandombe[day-1]}`;
                 // O caminho para o arquivo SVG
-                imgElement.width = 60;
                 // Anexa o elemento de imagem ao div
                 td.appendChild(imgElement);
 
