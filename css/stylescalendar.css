@@ -90,6 +90,10 @@
   table-layout: auto;
 }
 
+.numberMandombe{
+    width: 50%;
+}
+
 
 
 @media (max-width: 768px) {
