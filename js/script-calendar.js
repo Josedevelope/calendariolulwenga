@@ -213,7 +213,7 @@ function printCalendar(year) {
                     } else {
                         divGregorian.textContent = daMandmb + ` ${monthG[3]}`;
                     }
-                    if (daMandmb == new Date().getDate() ) {
+                    if (daMandmb == new Date().getDate() && monthIndex == monthL && year == new Date().getFullYear()-1) {
                         td.classList.add('today');
                     }
                 }
@@ -227,7 +227,7 @@ function printCalendar(year) {
                     } else {
                         divGregorian.textContent = daMandmb + ` ${monthG[4]}`;
                     }
-                    if (daMandmb == new Date().getDate() ) {
+                    if (daMandmb == new Date().getDate() && monthIndex == monthL && year == new Date().getFullYear()-1) {
                         td.classList.add('today');
                     }
                 }
@@ -240,7 +240,7 @@ function printCalendar(year) {
                     } else {
                         divGregorian.textContent = daMandmb + ` ${monthG[5]}`;
                     }
-                    if (daMandmb == new Date().getDate() ) {
+                    if (daMandmb == new Date().getDate() && monthIndex == monthL && year == new Date().getFullYear()-1) {
                         td.classList.add('today');
                     }
                 }
@@ -253,7 +253,7 @@ function printCalendar(year) {
                     } else {
                         divGregorian.textContent = daMandmb + ` ${monthG[6]}`;
                     }
-                    if (daMandmb == new Date().getDate() ) {
+                    if (daMandmb == new Date().getDate() && monthIndex == monthL && year == new Date().getFullYear()-1) {
                         td.classList.add('today');
                     }
                 }
@@ -266,7 +266,7 @@ function printCalendar(year) {
                     } else {
                         divGregorian.textContent = daMandmb + ` ${monthG[7]}`;
                     }
-                    if (daMandmb == new Date().getDate() ) {
+                    if (daMandmb == new Date().getDate() && monthIndex == monthL && year == new Date().getFullYear()-1) {
                         td.classList.add('today');
                     }
                 }
@@ -279,7 +279,7 @@ function printCalendar(year) {
                     } else {
                         divGregorian.textContent = daMandmb + ` ${monthG[8]}`;
                     }
-                    if (daMandmb == new Date().getDate() ) {
+                    if (daMandmb == new Date().getDate() && monthIndex == monthL && year == new Date().getFullYear()-1) {
                         td.classList.add('today');
                     }
                 }
@@ -292,7 +292,7 @@ function printCalendar(year) {
                     } else {
                         divGregorian.textContent = daMandmb + ` ${monthG[9]}`;
                     }
-                    if (daMandmb == new Date().getDate() ) {
+                    if (daMandmb == new Date().getDate() && monthIndex == monthL && year == new Date().getFullYear()-1) {
                         td.classList.add('today');
                     }
                 }
@@ -305,7 +305,7 @@ function printCalendar(year) {
                     } else {
                         divGregorian.textContent = daMandmb + ` ${monthG[10]}`;
                     }
-                    if (daMandmb == new Date().getDate() ) {
+                    if (daMandmb == new Date().getDate() && monthIndex == monthL && year == new Date().getFullYear()-1) {
                         td.classList.add('today');
                     }
                 }
@@ -318,7 +318,7 @@ function printCalendar(year) {
                     } else {
                         divGregorian.textContent = daMandmb + ` ${monthG[11]}`;
                     }
-                    if (daMandmb == new Date().getDate() ) {
+                    if (daMandmb == new Date().getDate() && monthIndex == monthL && year == new Date().getFullYear()-1) {
                         td.classList.add('today');
                     }
                 }
@@ -331,7 +331,7 @@ function printCalendar(year) {
                     } else {
                         divGregorian.textContent = daMandmb + ` ${monthG[0]}`;
                     }
-                    if (daMandmb == new Date().getDate() ) {
+                    if (daMandmb == new Date().getDate() && monthIndex == monthL && year == new Date().getFullYear()-1) {
                         td.classList.add('today');
                     }
                 }
@@ -348,7 +348,7 @@ function printCalendar(year) {
                     } else {
                         divGregorian.textContent = daMandmb + ` ${monthG[1]}`;
                     }
-                    if (daMandmb == new Date().getDate() ) {
+                    if (daMandmb == new Date().getDate() && monthIndex == monthL && year == new Date().getFullYear()-1) {
                         td.classList.add('today');
                     }
                 }
@@ -361,8 +361,7 @@ function printCalendar(year) {
                     } else {
                         divGregorian.textContent = daMandmb + ` ${monthG[2]}`;
                     }
-
-                    if (daMandmb == new Date().getDate() ) {
+                    if (daMandmb == new Date().getDate() && monthIndex == monthL && year == new Date().getFullYear()-1) {
                         td.classList.add('today');
                     }
                 }
