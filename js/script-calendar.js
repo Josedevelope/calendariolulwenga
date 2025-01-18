@@ -116,7 +116,6 @@ function printCalendar(year) {
     const calendar = generateCalendar(year);
     const calendarDiv = document.getElementById('calendar');
     calendarDiv.innerHTML = '';
-alert(new Date().getDay());
     calendar.forEach((monthDays, monthIndex) => {
         const monthDiv = document.createElement('div');
         monthDiv.className = 'month';
