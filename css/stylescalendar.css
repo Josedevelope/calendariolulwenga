@@ -1,8 +1,9 @@
 
+    
     .container-lulwenga {
         text-align: center;
         margin-top: 20px;
-        height: 30%;
+        height: 100%;
     }
     
     .container-lulwenga input {
@@ -26,7 +27,7 @@
         margin: 0 10px;
     }
     
-    .container-lulwenga #calendar {
+    #calendar {
         margin-top: 20px;
         width: 100%;
     }
@@ -38,7 +39,7 @@
     table {
         width: 100%;
         border-collapse: collapse;
-        margin-top: 5px;
+        margin-top: 10px;
     }
     
     .luluwenga-table th, .luluwenga-table td {
@@ -73,6 +74,11 @@
         color: white;
     }
     
+    .luluwenga-table .today {
+        background-color:  #9bb19b;
+        color: #0a0a0a;
+    }
+
     .luluwenga-table .weekend {
         background-color: #ffffff;
         color: #f60f07;
@@ -82,29 +88,6 @@
         border: 2px solid #004d00;
         padding: 5px;
     }
-
-#calendar {
-  width: 100%;
-  max-width: 100%;
-  table-layout: auto;
-}
-
-.numberMandombe{
-    width: 60px;
-}
-
-
-
-@media (max-width: 768px) {
-  #calendar {
-    font-size: 14px;
-  }
-.numberMandombe{
-    width: 25px;
-}
-    
-    
-}
     
         
       /* LUKONGULO*/
