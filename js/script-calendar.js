@@ -44,6 +44,13 @@ const codeMonthLulwenga = [6, 2, 5, 0, 2, 4, 0, 2, 4, 6, 1, 4]
 
 
 let baseDay = 0;
+// Controlo dos meses do canlendário Lulwenga
+let localeIntMonth = new Date().getMonth();
+let lm = (localeIntMonth - 3);
+let lmp = (localeIntMonth + 9) > 12 ? 0 : (localeIntMonth + 9);
+let monthL = (lm > lmp ? lm : lmp) < 0 ? (lm > lmp ? lm : lmp) *-1 : (lm > lmp ? lm : lmp)  ;
+
+
 
 function dayOfWeekBase(year, baseYear, baseWeekday) {
     // Número de anos bissextos entre o ano base e o ano desejado
@@ -109,7 +116,7 @@ function printCalendar(year) {
     const calendar = generateCalendar(year);
     const calendarDiv = document.getElementById('calendar');
     calendarDiv.innerHTML = '';
-
+alert(new Date().getDay());
     calendar.forEach((monthDays, monthIndex) => {
         const monthDiv = document.createElement('div');
         monthDiv.className = 'month';
@@ -124,6 +131,8 @@ function printCalendar(year) {
         const monthNameG = new Date(year, monthIndex + 3).toLocaleString('pt-BR', { month: 'short' }) + "-" + new Date(year, monthIndex + 4).toLocaleString('pt-BR', { month: 'short' });
         const monthHeaderG = document.createElement('h4');
         monthHeaderG.textContent = `${monthNameG} ${year}`;
+
+       
         if (monthIndex > 8) {
             monthHeaderG.textContent = `${monthNameG} ${year + 1}`;
         }
@@ -189,11 +198,11 @@ function printCalendar(year) {
             } else {
                 //td.textContent = day;
                 const imgElement = document.createElement('img');
-                imgElement.classeName = 'numberMandombe';
                 imgElement.src = 'source/svg/' + `${dayMandombe[day-1]}`;
                 if (dow == 6)
                     imgElement.src = 'source/svg/red-' + `${dayMandombe[day-1]}`;
                 // O caminho para o arquivo SVG
+                imgElement.width = 60;
                 // Anexa o elemento de imagem ao div
                 td.appendChild(imgElement);
 
@@ -204,6 +213,9 @@ function printCalendar(year) {
                         divGregorian.textContent = daMandmb + ` ${monthG[3 + 1]}`;
                     } else {
                         divGregorian.textContent = daMandmb + ` ${monthG[3]}`;
+                    }
+                    if (daMandmb == new Date().getDate() ) {
+                        td.classList.add('today');
                     }
                 }
 
@@ -216,6 +228,9 @@ function printCalendar(year) {
                     } else {
                         divGregorian.textContent = daMandmb + ` ${monthG[4]}`;
                     }
+                    if (daMandmb == new Date().getDate() ) {
+                        td.classList.add('today');
+                    }
                 }
                 // LANZA
                 if (monthIndex === 2) {
@@ -225,6 +240,9 @@ function printCalendar(year) {
                         divGregorian.textContent = daMandmb + ` ${monthG[5 + 1]}`;
                     } else {
                         divGregorian.textContent = daMandmb + ` ${monthG[5]}`;
+                    }
+                    if (daMandmb == new Date().getDate() ) {
+                        td.classList.add('today');
                     }
                 }
                 // SV
@@ -236,6 +254,9 @@ function printCalendar(year) {
                     } else {
                         divGregorian.textContent = daMandmb + ` ${monthG[6]}`;
                     }
+                    if (daMandmb == new Date().getDate() ) {
+                        td.classList.add('today');
+                    }
                 }
                 // LKS
                 if (monthIndex === 4) {
@@ -245,6 +266,9 @@ function printCalendar(year) {
                         divGregorian.textContent = daMandmb + ` ${monthG[7 + 1]}`;
                     } else {
                         divGregorian.textContent = daMandmb + ` ${monthG[7]}`;
+                    }
+                    if (daMandmb == new Date().getDate() ) {
+                        td.classList.add('today');
                     }
                 }
                 // MBAG
@@ -256,6 +280,9 @@ function printCalendar(year) {
                     } else {
                         divGregorian.textContent = daMandmb + ` ${monthG[8]}`;
                     }
+                    if (daMandmb == new Date().getDate() ) {
+                        td.classList.add('today');
+                    }
                 }
                 // snz
                 if (monthIndex === 6) {
@@ -265,6 +292,9 @@ function printCalendar(year) {
                         divGregorian.textContent = daMandmb + ` ${monthG[9 + 1]}`;
                     } else {
                         divGregorian.textContent = daMandmb + ` ${monthG[9]}`;
+                    }
+                    if (daMandmb == new Date().getDate() ) {
+                        td.classList.add('today');
                     }
                 }
                 // mansanga
@@ -276,6 +306,9 @@ function printCalendar(year) {
                     } else {
                         divGregorian.textContent = daMandmb + ` ${monthG[10]}`;
                     }
+                    if (daMandmb == new Date().getDate() ) {
+                        td.classList.add('today');
+                    }
                 }
                 // knd
                 if (monthIndex === 8) {
@@ -286,6 +319,9 @@ function printCalendar(year) {
                     } else {
                         divGregorian.textContent = daMandmb + ` ${monthG[11]}`;
                     }
+                    if (daMandmb == new Date().getDate() ) {
+                        td.classList.add('today');
+                    }
                 }
                 // ntmn
                 if (monthIndex === 9) {
@@ -295,6 +331,9 @@ function printCalendar(year) {
                         divGregorian.textContent = daMandmb + ` ${monthG[0 + 1]}`;
                     } else {
                         divGregorian.textContent = daMandmb + ` ${monthG[0]}`;
+                    }
+                    if (daMandmb == new Date().getDate() ) {
+                        td.classList.add('today');
                     }
                 }
                 // kyanza
@@ -310,6 +349,9 @@ function printCalendar(year) {
                     } else {
                         divGregorian.textContent = daMandmb + ` ${monthG[1]}`;
                     }
+                    if (daMandmb == new Date().getDate() ) {
+                        td.classList.add('today');
+                    }
                 }
                 // mansa
                 if (monthIndex === 11) {
@@ -320,17 +362,20 @@ function printCalendar(year) {
                     } else {
                         divGregorian.textContent = daMandmb + ` ${monthG[2]}`;
                     }
+
+                    if (daMandmb == new Date().getDate() ) {
+                        td.classList.add('today');
+                    }
                 }
+             
 
             }
-
-
-
-
             // Adicionando uma classe específica aos finais de semana
             if (dow === 6) {
                 td.classList.add('weekend');
             }
+
+            
 
             trBody.appendChild(td);
             td.appendChild(divGregorian);
@@ -353,7 +398,11 @@ function printCalendar(year) {
         monthDiv.appendChild(table);
         calendarDiv.appendChild(monthDiv);
     });
-    showMonth(0);
+   
+
+
+
+    showMonth(monthL);
 }
 
 function showMonth(monthIndex) {
@@ -363,14 +412,15 @@ function showMonth(monthIndex) {
     });
 }
 
-let currentMonth = 0;
-let currentYear = new Date().getFullYear();
+let currentMonth = monthL;
+let currentYear = new Date().getFullYear() - 1;
 
 document.getElementById('prevMonth').addEventListener('click', () => {
     currentMonth = (currentMonth - 1 + 12) % 12;
     if (currentMonth === 11) currentYear--;
     printCalendar(currentYear);
     showMonth(currentMonth);
+    console.log(currentMonth);
 });
 
 document.getElementById('nextMonth').addEventListener('click', () => {
@@ -386,7 +436,7 @@ document.getElementById('generateCalendar').addEventListener('click', () => {
 
     if (!isNaN(year)) {
         currentYear = year;
-        currentMonth = 0;
+        currentMonth = new Date().getFullYear();
         printCalendar(year);
     } else {
         alert('Por favor, insira um ano válido.');
