@@ -143,18 +143,19 @@
 
 
                         <div class="calendar">
+                            <div class="year-input">
+                                <input type="number" id="year-input" placeholder="Ano Lulwenga" />
+                                <button class="confirm-button" id="generateCalendar">Procurar</button>
+                            </div>
                             <div class="calendar-header">
                                 <button class="nav-button" id="prevMonth">&#10094;</button>
                                 <div id="display-text">
                                     <h2 id="monthYear">Março 2023</h2>
-                                    <h3 id="monthYearG">Março 2023</h3>
+                                    <h5 id="monthYearG">Março 2023</h5>
                                 </div>
                                 <button class="nav-button" id="nextMonth">&#10095;</button>
                             </div>
-                            <div class="year-input">
-                                <input type="number" id="year-input" placeholder="Ano" />
-                                <button class="confirm-button" id="generateCalendar">Procurar</button>
-                            </div>
+                            
                             <div id="calendar" class="table-responsive"></div>
                         </div>
                     </div>
