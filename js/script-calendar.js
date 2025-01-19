@@ -47,10 +47,11 @@ const codeMonthLulwenga = [6, 2, 5, 0, 2, 4, 0, 2, 4, 6, 1, 4]
 let baseDay = 0;
 // Controlo dos meses do canlendário Lulwenga
 let localeIntMonth = new Date().getMonth();
+let generateMonthClick = 1;
 let lm = (localeIntMonth - 3);
 let lmp = (localeIntMonth + 9) > 12 ? 0 : (localeIntMonth + 9);
 let monthL = (lm > lmp ? lm : lmp) < 0 ? (lm > lmp ? lm : lmp) * -1 : (lm > lmp ? lm : lmp);
-
+monthL= generateMonthClick == 0 ? 0: monthL;
 
 
 function dayOfWeekBase(year, baseYear, baseWeekday) {
@@ -414,6 +415,9 @@ function printCalendar(year) {
     });
 
 
+    if (generateMonthClick < 1) {
+        monthL = generateMonthClick;
+    }
 
 
     showMonth(monthL);
@@ -455,11 +459,13 @@ document.getElementById('nextMonth').addEventListener('click', () => {
 
 document.getElementById('generateCalendar').addEventListener('click', () => {
     const yearInput = document.getElementById('year-input').value;
+    
     const year = parseInt(yearInput, 10);
 
     if (!isNaN(year)) {
         currentYear = year;
-        currentMonth = new Date().getFullYear();
+        generateMonthClick = 0;
+        currentMonth = 0;
         printCalendar(year);
     } else {
         alert('Por favor, insira um ano válido.');
