@@ -467,18 +467,6 @@ document.getElementById('generateCalendar').addEventListener('click', () => {
     display();
 });
 
-function mostraAlerta() {
-    alert("Você clicou no botão");
-}
-
-window.onload = function () {
-    let botaoAlerta = document.getElementById("generateCalendar");
-
-    botaoAlerta.onclick = function () {
-        mostraAlerta();
-    };
-}
-
 
 printCalendar(currentYear);
 display();
