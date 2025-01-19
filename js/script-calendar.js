@@ -1,4 +1,4 @@
-const weekDayM = ['semana só-01.svg', 'semana só-02.svg', 'semana só-03.svg', 'semana só-04.svg', 'semana só-05.svg', 'semana só-06.svg', 'semana só-07.svg'];
+const weekDayM = ['semana-01.svg', 'semana-02.svg', 'semana-03.svg', 'semana-04.svg', 'semana-05.svg', 'semana-06.svg', 'semana-07.svg'];
 const weekDays = ['Nkenge', 'Mpangala', 'Nsona', 'Mbala', 'Konzo', 'Ndele', 'Nkandu'];
 let ano = null;
 const weekDaysP = ['Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sáb', 'Dom'];
@@ -462,11 +462,11 @@ document.getElementById('generateCalendar').addEventListener('click', () => {
     
     const year = parseInt(yearInput, 10);
 
-    if (!isNaN(year)) {
-        currentYear = year;
+    if (!isNaN(year+1887)) {
+        currentYear = year+1887;
         generateMonthClick = 0;
         currentMonth = 0;
-        printCalendar(year);
+        printCalendar(year+1887);
     } else {
         alert('Por favor, insira um ano válido.');
     }
